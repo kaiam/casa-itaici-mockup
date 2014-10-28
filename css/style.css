@@ -1835,7 +1835,7 @@ input.hint {
 /*MEDIA QUERIES*/
 
 /*Desktop*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1920px) {
 	
 	#navi-collapse.collapse.navbar-collapse { padding: 0 !important; }
 	.nav.navbar-nav.nav-left li {	margin-right: 32px; }
@@ -1846,12 +1846,17 @@ input.hint {
 		padding: 0 15px;
 	}
 	.recipes-single .header-inner .controls { right: 15px; }
-	
+	#about_mobile, .mmobi{
+		display: none !important;
+	}
+	#about, .mdesk {
+		display: block !important;
+	}
 }
 
 /*Tablet Landscape*/
 @media screen and (max-width: 991px) {
-	
+
 	.intro-title {
 		width: auto;
 		height: auto;
@@ -1866,43 +1871,53 @@ input.hint {
 		text-align: left;
 		line-height: 1.2;
 	}
-	.intro-title h1 span{
+	.intro-title h1 span {
 		font-size: 0.6em
 	}
 	.social-bar {
 		display: table;
 		margin: auto;
-		text-align:left;
+		text-align: left;
 	}
 	.logo {
 		width: 140px;
 		left: 20px;
 		margin-left: 0;
 	}
-	header .container { width: 100%; }
+	header .container {
+		width: 100%;
+	}
 	.stiky {
 		position: fixed;
 		top: 0;
 	}
-	.info-bg, .info { max-width: 100%; }
+	.info-bg, .info {
+		max-width: 100%;
+	}
 	.navbar-header {
 		float: none;
 		width: 100%;
 	}
-	.navbar-toggle { display: block; }
+	.navbar-toggle {
+		display: block;
+	}
 	.navbar-collapse {
-			border-top: 1px solid transparent;
-			box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 	}
-	.navbar-collapse.collapse { display: none!important; }
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
 	.navbar-nav {
-			float: none!important;
-			margin: 7.5px -15px;
+		float: none !important;
+		margin: 7.5px -15px;
 	}
-	.navbar-nav>li { float: none; }
-	.navbar-nav>li>a {
-			padding-top: 10px;
-			padding-bottom: 10px;
+	.navbar-nav > li {
+		float: none;
+	}
+	.navbar-nav > li > a {
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.navbar-collapse {
 		position: absolute;
@@ -1919,14 +1934,18 @@ input.hint {
 		border-top: 15px solid #2d2935;
 		border-bottom: 15px solid #2d2935;
 	}
-	.navbar-collapse.in { 
+	.navbar-collapse.in {
 		border-top: 15px solid #2d2935;
 		border-bottom: 15px solid #2d2935;
 		overflow-y: auto;
 	}
-	.nav-left, .nav-right { float: none !important; }
+	.nav-left, .nav-right {
+		float: none !important;
+	}
 	.nav.navbar-nav.nav-left li,
-	.nav.navbar-nav.nav-right li { margin: 0px; }
+	.nav.navbar-nav.nav-right li {
+		margin: 0px;
+	}
 	.nav.navbar-nav li a {
 		padding: 10px 20px;
 		margin-bottom: 1px;
@@ -1950,56 +1969,96 @@ input.hint {
 		background-color: transparent;
 	}
 	.navbar-nav .open .dropdown-menu {
-    position: static;
-    float: none;
-    width: auto;
+		position: static;
+		float: none;
+		width: auto;
 		height: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-  }
-  .navbar-nav .open .dropdown-menu > li > a {
+		margin-top: 0;
+		background-color: transparent;
+		border: 0;
+		box-shadow: none;
+	}
+	.navbar-nav .open .dropdown-menu > li > a {
 		color: #fff !important;
-		padding-left: 30px !important; 
-  }
-  .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-nav .open .dropdown-menu > li > a:focus {
-    background: none !important;
-  }
+		padding-left: 30px !important;
+	}
+	.navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-nav .open .dropdown-menu > li > a:focus {
+		background: none !important;
+	}
 	li.dropdown.active.open > ul.dropdown-menu li a {
-    background-color: transparent !important;
+		background-color: transparent !important;
 	}
 	li.dropdown.active.open > ul.dropdown-menu li a:hover,
 	li.dropdown.open > ul.dropdown-menu li a:hover {
-    opacity: 0.6;
+		opacity: 0.6;
 		filter: alpha(opacity=60);
 	}
-	#navi-collapse ul li ul li  a {
+	#navi-collapse ul li ul li a {
 		-webkit-transition: background-color 300ms ease !important;
 		-moz-transition: background-color 300ms ease !important;
 		-o-transition: background-color 300ms ease !important;
 		transition: background-color 300ms ease !important;
 	}
-	.reservation-inner { padding: 50px 0 50px 0; }
-	.reservation h3 { margin-top: 30px; }
-	#news-carousel { padding: 60px 0 80px 0; }
-	.app { padding: 60px 0 50px 0; }
-	.news h3, .news h4, .app h2, .app p { text-align: center; }
-	.appstore-btn, .google-play-btn { margin: 15px 0; }
-	.phone { margin-top: 25px; }
-	.app-features { margin-top: 45px; }
-	.contacts, .contacts p { text-align: center; }
-	.contacts h3 { margin: 40px 0 20px 0; }
-	#map_canvas { margin-bottom: 10px; }
-	.recipes a .inner { padding: 0 30px; }
-	.recipes-single .header-inner { 
+	.reservation-inner {
+		padding: 50px 0 50px 0;
+	}
+	.reservation h3 {
+		margin-top: 30px;
+	}
+	#news-carousel {
+		padding: 60px 0 80px 0;
+	}
+	.app {
+		padding: 60px 0 50px 0;
+	}
+	.news h3, .news h4, .app h2, .app p {
+		text-align: center;
+	}
+	.appstore-btn, .google-play-btn {
+		margin: 15px 0;
+	}
+	#about_mobile, .mmobi {
+		display: none !important;
+	}
+	#about, .mdesk {
+		display: block !important;
+	}
+	.phone {
+		margin-top: 25px;
+	}
+	.app-features {
+		margin-top: 45px;
+	}
+	.contacts, .contacts p {
+		text-align: center;
+	}
+	.contacts h3 {
+		margin: 40px 0 20px 0;
+	}
+	#map_canvas {
+		margin-bottom: 10px;
+	}
+	.recipes a .inner {
+		padding: 0 30px;
+	}
+	.recipes-single .header-inner {
 		max-width: 720px !important;
 		padding: 0;
 	}
-	.recipes-single .header-inner .controls { right: 0px; }
-	.footer-logo { margin: 0 auto 30px auto; }
-	footer h3, footer p { text-align: center; }
+
+	.recipes-single .header-inner .controls {
+		right: 0px;
+	}
+
+	.footer-logo {
+		margin: 0 auto 30px auto;
+	}
+
+	footer h3, footer p {
+		text-align: center;
+	}
+
 	.footer-contacts i {
 		width: 100%;
 		float: none;
@@ -2007,26 +2066,42 @@ input.hint {
 		text-align: center;
 		margin-bottom: 10px;
 	}
+
 	.footer-contacts p {
 		float: none;
 		text-align: center;
 		width: 100%;
 		margin-bottom: 20px;
-	}	
-	.footer-contacts .group.last { margin-bottom: 40px; }
-	.subscribe-form { margin-bottom: 20px; }
+	}
+
+	.footer-contacts .group.last {
+		margin-bottom: 40px;
+	}
+
+	.subscribe-form {
+		margin-bottom: 20px;
+	}
+
 	footer .social-bar {
 		display: table;
 		margin: auto;
-		text-align:center;
+		text-align: center;
 	}
+
 	.subscribe-form input[type=email] {
 		width: 100%;
 		margin-right: 0;
 		text-align: center;
 	}
-	.subscribe-form input[type=submit] { width: 100%;	}
-	#big-video-wrap, .intro-slideshow, .intro-slideshow ul li, .intro-title { position: absolute; }
+
+	.subscribe-form input[type=submit] {
+		width: 100%;
+	}
+
+	#big-video-wrap, .intro-slideshow, .intro-slideshow ul li, .intro-title {
+		position: absolute;
+	}
+}
 
 /*Tablet Portrait*/
 @media screen and (max-width: 768px) {
@@ -2042,6 +2117,12 @@ input.hint {
 	.recipes-single .header-inner .heading h1 { width: 80%;	}
 	.pagination { margin-bottom: 50px; }
 	.back-btn { margin-bottom: 50px; }
+	#about_mobile, .mmobi {
+		display: block !important;
+	}
+	#about, .mdesk {
+		display: none !important;
+	}
 	
 }
 
@@ -2049,5 +2130,11 @@ input.hint {
 @media screen and (max-width: 561px) {
 	
 	.recipes a h3, .recipes a p { width: 85%; }
+	#about_mobile, .mmobi {
+		display: block !important;
+	}
+	#about, .mdesk {
+		display: none !important;
+	}
 	
 }
