@@ -18,7 +18,7 @@
    viewBox="0 0 140 90"
    enable-background="new 0 0 140 90"
    xml:space="preserve"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91pre2 r13516"
    sodipodi:docname="logo-casa-itaici.svg"><metadata
      id="metadata27"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -32,15 +32,15 @@
      guidetolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:window-width="1440"
-     inkscape:window-height="851"
+     inkscape:window-width="1280"
+     inkscape:window-height="660"
      id="namedview23"
      showgrid="false"
      inkscape:zoom="5.0285714"
      inkscape:cx="33.937499"
      inkscape:cy="42.807569"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1" /><path
      d="M 70.710516,24.180518 59.837742,19.841625 c -4.297043,9.995043 -9.167881,17.332719 -6.582822,29.626707 -1.395966,9.311665 -5.368343,18.252406 -7.355597,18.073213 -2.637345,-0.237292 -5.660479,-1.306918 -5.658475,-0.05202 l -0.161903,0.945759 c 1.174725,1.153387 3.029661,2.317107 6.734738,4.062008 4.341092,1.36727 5.869835,1.400551 7.816975,1.632382 l 0.473435,-1.012459 c 0.62809,-1.343201 -0.999107,-1.733563 -4.343232,-3.797098 -2.151507,-1.3276 1.702909,-11.807051 6.336986,-18.975728 9.220832,-6.891536 10.778218,-18.585786 13.612748,-26.164312 z"
@@ -54,7 +54,7 @@
      sodipodi:nodetypes="cccsccccsscc"
      id="path3019-7" /><text
      xml:space="preserve"
-     style="font-size:32.0231781px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     style="font-style:normal;font-weight:normal;font-size:32.0231781px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="26.347277"
      y="64.757774"
      id="text3763"
@@ -63,5 +63,5 @@
        id="tspan3765"
        x="26.347277"
        y="64.757774"
-       style="font-size:19.21390724px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#cbcbcb;stroke-width:0.40028974;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Marmelad;-inkscape-font-specification:Marmelad">Casa Itaíci</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.21390724px;line-height:125%;font-family:Marmelad;-inkscape-font-specification:Marmelad;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#cbcbcb;stroke-width:0.40028974;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Casa Itaici</tspan></text>
 </svg>

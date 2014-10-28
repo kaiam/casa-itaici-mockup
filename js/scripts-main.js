@@ -352,14 +352,19 @@ function initialize() {
 	var map_options = {
 		center: latlng,
 		zoom: 14,
-		disableDefaultUI: true
+		scrollwheel: false,
+		navigationControl: true,
+		mapTypeControl: false,
+		scaleControl: true,
+		draggable: true,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
 	map = new google.maps.Map(map_canvas, map_options);
 	codeAddress();
 }
 
 function codeAddress() {
-	var image = 'img/marker.png';
+  var image = 'img/marker.png';
   var address = query;
   geocoder.geocode( { 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
@@ -368,7 +373,7 @@ function codeAddress() {
           map: map,
           position: results[0].geometry.location,
 					icon: image,
-					title: 'Eattie Restaurant'
+					title: 'Casa Itaici Espaço de Eventos'
       });
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
