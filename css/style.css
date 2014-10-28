@@ -1858,6 +1858,7 @@ input.hint {
 		padding: 15px 12px 13px 12px;
 		left: 2%;
 		top: 60%;
+		visibility: hidden;
 		/*margin: -165px 0 0 -140px;*/
 	}
 	.intro-title h1 {
