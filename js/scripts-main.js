@@ -356,7 +356,7 @@ function initialize() {
 		navigationControl: true,
 		mapTypeControl: false,
 		scaleControl: true,
-		draggable: true,
+		draggable: false,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
 	map = new google.maps.Map(map_canvas, map_options);
