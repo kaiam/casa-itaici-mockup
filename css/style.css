@@ -1013,7 +1013,7 @@ li.ui-timepicker-selected,
 /*map*/
 .map .heading {
 	color: #393443;
-	background-color: #393443;
+	background-color: rgba(39,45,39,1);
 }
 #map_canvas {
 	width: 100%;
@@ -1029,7 +1029,7 @@ li.ui-timepicker-selected,
 }
 .contacts .heading {
 	color: #393443;
-	background-color: #393443;
+	background-color: rgba(39,45,39,1);
 }
 .contacts .container {
 	padding-top: 30px;
@@ -1072,7 +1072,7 @@ li.ui-timepicker-selected,
 .menu1 .heading,
 .menu2 .heading {
 	color: #393443;
-	background-color: #393443;
+	background-color: rgba(39,45,39,1);
 }
 .panel-group {
 	background: none;
@@ -1653,7 +1653,7 @@ input.hint {
 	left:0;
 	right:0;
 	bottom:0;
-	background-color: #211a27;
+	background-color: rgba(39,45,39,1);
 	z-index:100;
 }
 #status{
