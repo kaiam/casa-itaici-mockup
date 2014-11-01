@@ -157,8 +157,9 @@ $(document).ready(function(e) {
 			$(this).cycle({
 					fx:'fade',
 					speed: 800,
-					timeout: 0,
+					timeout: 7000,
 					pager: '.pager',
+					pause: 1,
 					pagerAnchorBuilder: function(i) {
 				if (index == 0)
 					// for first slideshow, return a new anchro

@@ -58,7 +58,7 @@ embed, object, iframe{max-width: 100%;}
 	max-width: 400px;
 	height: auto;
 	padding: 35px 18px 25px 18px;
-	background-color: rgba(82,51,70,0.9);
+	background-color: rgba(29,82,29,0.9);
 	left: 2%; /*65px;*/
 	top: 42%;
 	margin-top: -165px;
@@ -148,7 +148,7 @@ embed, object, iframe{max-width: 100%;}
 /*Header*/
 header {
 	width: 100%;
-	background-color: #211a27;
+	background-color: rgba(9,31,9,1);
 	height: 90px;
 	position: relative;
 	z-index: 5;
@@ -345,7 +345,7 @@ li.dropdown.open a {
 }
 .about .heading {
 	color: #393443;
-	background-color: #393443;
+	background-color: rgba(39,45,39,1);
 }
 .about-slider {
 	position: relative;
@@ -1549,7 +1549,7 @@ li.ui-timepicker-selected,
 footer {
 	width: 100%;
 	padding: 3px 0 3px 0;
-	background-color: #807691;
+	background-color: rgba(29,82,29,1);
 }
 .footer-logo {
 	width: 133px;
@@ -2118,10 +2118,10 @@ input.hint {
 	.pagination { margin-bottom: 50px; }
 	.back-btn { margin-bottom: 50px; }
 	#about_mobile, .mmobi {
-		display: block !important;
+		display: none !important;
 	}
 	#about, .mdesk {
-		display: none !important;
+		display: block !important;
 	}
 	
 }
@@ -2131,10 +2131,10 @@ input.hint {
 	
 	.recipes a h3, .recipes a p { width: 85%; }
 	#about_mobile, .mmobi {
-		display: block !important;
+		display: none !important;
 	}
 	#about, .mdesk {
-		display: none !important;
+		display: block !important;
 	}
 	
 }
