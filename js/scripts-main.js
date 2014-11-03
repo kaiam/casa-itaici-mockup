@@ -152,7 +152,7 @@ $(document).ready(function(e) {
 	});
 	////////////////////////////////////////////////////////////////////
 
-	/*About Slider*/
+	/*About Slider*
 	$('.about-slider-inner, .info-slider').each(function(index) {
 			$(this).cycle({
 					fx:'fade',
@@ -168,11 +168,11 @@ $(document).ready(function(e) {
 				return '.pager a:eq('+i+')';
         	}
 			});
-  });
+  });*/
 	
 	
 	//Enable swiping (News Slider)
-	$(".carousel-inner").swipe( {
+	/*$(".carousel-inner").swipe( {
 		//Generic swipe handler for all directions
 		swipeRight:function(event, direction, distance, duration, fingerCount) {
 			$(this).parent().carousel('prev'); 
@@ -182,7 +182,7 @@ $(document).ready(function(e) {
 		},
 		//Default is 75px, set to 0 for demo so any distance triggers swipe
 		threshold:0
-	});
+	});*/
 					
 						
 	/*FORMS*/

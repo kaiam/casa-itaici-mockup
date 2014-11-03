@@ -1,8 +1,3 @@
-/*
- *Eattie Restaurant HTML Template Style Sheet v1.1
- *Copyright 2013 8Guild.com
- */
-
 /* Apply a natural box layout model to all elements */
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -22,7 +17,7 @@ h1, h2, h3 {
 }
 p {
 	font: 1em 'PT Sans', Arial, Helvetica, sans-serif;
-	text-align: justify;
+	text-align: left;
 }
 a {
 	outline: none !important;
@@ -101,7 +96,7 @@ embed, object, iframe{max-width: 100%;}
 }
 
 /*Intro Fullscreen Slideshow*/
-.intro-slideshow {
+.intro-slide {
 	position: fixed;
 	width: 100%;
 	height: auto;
@@ -111,7 +106,7 @@ embed, object, iframe{max-width: 100%;}
 	left: 0;
 	overflow: hidden;
 }
-.intro-slideshow ul li {
+.intro-slide img {
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -125,7 +120,7 @@ embed, object, iframe{max-width: 100%;}
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;	
-	opacity: 0;
+	/*opacity: 0;*/
 	filter: alpha(opacity=0);/*for ie8*/
 	-webkit-transition: all 2s ease-out;
 	-moz-transition: all 2s ease-out;
@@ -133,7 +128,7 @@ embed, object, iframe{max-width: 100%;}
 	-o-transition: all 2s sease-out;
 	transition: all 2s sease-out;
 }
-.intro-slideshow ul li.current {
+.intro-slide img.current {
 	opacity: 1;
 	filter: alpha(opacity=100);/*for ie8*/
 }
@@ -357,7 +352,7 @@ li.dropdown.open a {
 	width: 100%;
 	z-index: 1;
 }
-.info-bg {
+.info-box {
 	position: absolute;
 	width: 100%;
 	max-width: 450px;
@@ -365,6 +360,7 @@ li.dropdown.open a {
 	background-color: #fff;
 	opacity: 0.9;
 	filter: alpha(opacity=90);
+	text-align: center;
 	z-index: 2;
 	top: 0;
 }
@@ -379,45 +375,49 @@ li.dropdown.open a {
 	padding: 55px 0;
 }
 .pager {
-	height: 12px;
+	height: 25px;
 	margin: 0 0 45px 0;
 }
-.pager a {
+.pager span {
 	display: inline-block;
 	text-indent: -9999px !important;
-	width: 12px;
-	height: 12px;
-	margin: 0 7px;
+	width: 25px;
+	height: 25px;
+	margin: 0 8px;
 	border: 2px solid #807691;
+	background-color: transparent;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
+	cursor: pointer;
 }
-.pager a.activeSlide {
+.pager span.cycle-pager-active {
 	background-color: #807691;
+	cursor: default;
 }
-.info-slider {
+.info-box {
 	width: 100%;
-	max-width: 265px;
 	margin: auto;
 }
-.ie8 .info-slider div {
+.ie8 .info-box div {
 	background: none !important;
 }
-.info-slider img {
+.info-box img {
 	display: block;
 	margin: 0 auto 35px auto;
 }
-.info-slider h3 {
+.info-box h3 {
 	color: #807691;
 	font-size:2.125em;
 	text-align: center;
 	margin: 35px 0;
 }
-.info-slider p {
+.info-box p {
 	color: #4f4f4f;
+	text-align: left;
+	margin: 0 15%;
 }
-.info-slider p i {
+.info-box p i {
 	font-size: 1.9em;
 	margin-right: 18px;
 	color: #807691;
@@ -1891,7 +1891,7 @@ input.hint {
 		position: fixed;
 		top: 0;
 	}
-	.info-bg, .info {
+	.info-box, .info {
 		max-width: 100%;
 	}
 	.navbar-header {
@@ -2098,7 +2098,7 @@ input.hint {
 		width: 100%;
 	}
 
-	#big-video-wrap, .intro-slideshow, .intro-slideshow ul li, .intro-title {
+	#big-video-wrap, .intro-slide, .intro-title {
 		position: absolute;
 	}
 }

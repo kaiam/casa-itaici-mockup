@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <!--Intro Fullscreen Slideshow-->
+    <!--Intro Fullscreen Slideshow
   	<section class="intro-slideshow" id="home">
     	<ul>
       	<li style="background-image: url(img/intro/entrada_angulo_fundos.jpg)"></li>
@@ -65,6 +65,25 @@
         <li style="background-image: url(img/intro/palmeira_night.jpg)"></li>
       	<li style="background-image: url(img/intro/fundos-2.jpg)"></li>
       </ul>
+    </section>-->
+
+    <section class="cycle-slideshow intro-slide" id="home"
+             data-cycle-fx="fade"
+             data-cycle-timeout="4000"
+             data-cycle-loader=true
+             data-cycle-progressive="#images">
+
+      <img src="img/intro/entrada_angulo_fundos.jpg" />
+
+      <script id="images" type="text/cycle">
+        [
+            "<img src='img/intro/fonte.jpg' />",
+            "<img src='img/intro/bolo_casamento_salao.jpg' />",
+            "<img src='img/intro/bar_day.jpg' />",
+            "<img src='img/intro/palmeira_night.jpg' />",
+            "<img src='img/intro/fundos-2.jpg' />"
+        ]
+    </script>
     </section>
     
     <!--Intro Title-->
@@ -116,34 +135,51 @@
       <section class="block about" id="about">
         <div class="heading"><h2>Conheça o Espaço</h2><span class="triangle"></span></div>
         <div class="about-slider">
-        	<div class="info-bg"></div>
-        	<div class="info animation" data-animation="fadeInLeft">
-          	<div class="pager"></div>
-            <div class="info-slider">
-            	<div>
+          <div class=" cycle-slideshow"
+               data-cycle-swipe="true"
+               data-cycle-swipe-fx="fade"
+               data-cycle-fx="fade"
+               data-cycle-timeout="4000"
+               data-cycle-pause-on-hover="true"
+               data-cycle-slides="> div"
+               data-cycle-pager=".pager">
+
+            <div>
+              <div class="info-box info">
+                <div class="pager"></div>
                 <img class="svg" src="img/about/icon4.svg" width="101" height="101" alt="Casa Itaici"/>
                 <img class="png" src="img/about/icon4.png" width="101" height="101" alt="Casa Itaici"/>
                 <h3>Casa Itaici</h3>
                 <p><i class="fa fa-quote-left"></i>Espaço para eventos e festas em excelente localização e ótimo custo benefício. Local ideal para eventos intimistas e de pequeno porte, com capacidade para até 150 pessoas.</p>
               </div>
-            	<div>
-                <img class="svg" src="img/about/icon4.svg" width="101" height="101" alt="Infraestrutura"/>
-                <img class="png" src="img/about/icon4.png" width="101" height="101" alt="Infraestrutura"/>
+              <div class="about-slider-inner">
+                <img src="img/about/entrada_angulo_fundos_570.jpg" width="1920" height="570" alt="entrada"/>
+              </div>
+            </div>
+            <div>
+              <div class="info-box info">
+                <div class="pager"></div>
+                <img class="svg" src="img/about/icon4.svg" width="101" height="101" alt="Infraestrutura" />
+                <img class="png" src="img/about/icon4.png" width="101" height="101" alt="Infraestrutura" />
                 <h3>Infraestrutura</h3>
                 <p><i class="fa fa-quote-left"></i>A Casa oferece ambientes internos e externos, com acessibilidade total às pessoas com mobilidade reduzida e estacionamento (interno e privativo). A estrutura contém cozinha industrial, bar, cafeteria, móveis (madeira de demolição), sonorização ambiente, ar condicionado (frio e quente), acesso à Internet com wi-fi (50 megas fibra), e vestiários para colaboradores (com entrada independente).</p>
               </div>
-            	<div>
-                <img class="svg" src="img/about/icon4.svg" width="101" height="101" alt="Eventos"/>
-                <img class="png" src="img/about/icon4.png" width="101" height="101" alt="Eventos"/>
+              <div class="about-slider-inner">
+                <img src="img/about/salao_decorado_570.jpg" width="1920" height="570" alt="salão decorado" />
+              </div>
+            </div>
+            <div>
+              <div class="info-box info">
+                <div class="pager"></div>
+                <img class="svg" src="img/about/icon4.svg" width="101" height="101" alt="Eventos" />
+                <img class="png" src="img/about/icon4.png" width="101" height="101" alt="Eventos" />
                 <h3>Eventos</h3>
                 <p><i class="fa fa-quote-left"></i>Recebemos eventos sociais e corporativos de todos os formatos, casamentos, noivados, aniversários, bodas, chás de bebê, leilões, degustações, coquetéis, workshops, vernissages, reuniões, confraternizações, etc. Consulte-nos para maiores informações e agendar sua visita.</p>
               </div>
+              <div class="about-slider-inner">
+                <img src="img/about/bolo_casamento_salao_570.jpg" width="1920" height="570" alt="eventos" />
+              </div>
             </div>
-          </div>
-        	<div class="about-slider-inner">
-            <div><img src="img/about/entrada_angulo_fundos_570.jpg" width="1920" height="570" alt="entrada"/></div>
-            <div><img src="img/about/salao_decorado_570.jpg" width="1920" height="570" alt="salão decorado"/></div>
-            <div><img src="img/about/bolo_casamento_salao_570.jpg" width="1920" height="570" alt="eventos"/></div>
           </div>
         </div>
       </section>
@@ -253,6 +289,9 @@
     <script src="js/plugins/bootstrap.min.js"></script>
     <script src="js/plugins/jquery.touchSwipe.min.js"></script>
     <script src="js/plugins/jquery.cycle.min.js"></script>
+    <script src="js/plugins/jquery.cycle2.min.js"></script>
+    <script src="js/plugins/jquery.cycle2.carousel.min.js"></script>
+    <script src="js/plugins/jquery.cycle2.swipe.min.js"></script>
     <script src="js/plugins/waypoints.min.js"></script>
     <script src="js/plugins/waypoints-sticky.min.js"></script>
     <script src="js/plugins/datepicker.min.js"></script>
