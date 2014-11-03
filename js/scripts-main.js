@@ -22,7 +22,11 @@ if (Modernizr.touch) {
 		$(window).on('load', function(){
 			
 			/*Curtain Effect*/
-			wrapper.css('margin-top', $(window).height()-90);
+			if($(window).width() > 976) {
+				wrapper.css('margin-top', $(window).height()-90);
+			} else {
+				wrapper.css('margin-top', $('#home').height());
+			}
 			
 			/*Stiky Header*/
 			$(".stiky").waypoint('sticky');
@@ -31,7 +35,11 @@ if (Modernizr.touch) {
 		
 		/*Scripts Executed on Page Resize*/	
 		$(window).on('resize', function(){
-			wrapper.css('margin-top', $(window).height()-90);
+			if($(window).width() > 976) {
+				wrapper.css('margin-top', $(window).height()-90);
+			} else {
+				wrapper.css('margin-top', $('#home').height());
+			}
 		});
 
 } else {
@@ -294,48 +302,7 @@ $(document).ready(function(e) {
 });/*/Document ready*/
 
 /*Intro Fullscreen Slideshow Function*/
-var slider = {
-    currentSlide: 0,
-    currentTitle: 0,
-    timeOut: 7000,
-    pred2: true,
-    offset: 0,
-    selector: '.intro-slideshow ul',
-    currentCls: "current",
-    countItems: 0,
-    titleSelector: '',
-    titleActive: '',
 
-    bgSlider: function (countItems) {
-        var me = this;
-        me.countItems = countItems || me.countItems;
-        me._next();
-        me._timeoutId = setTimeout(function(){me.bgSlider();}, me.timeOut);
-    },
-    _next: function(){
-        var me = this;
-        if (me.currentSlide === me.countItems) {
-            me.currentSlide = 1;
-        } else {
-            me.currentSlide ++;
-        }
-        me.doSlide();
-    },
-    nextSlide: function(){
-        var me = this;
-        clearTimeout(me._timeoutId);
-        me.bgSlider();
-    },
-    doSlide: function(){
-        var me = this;
-        // background
-        $(me.selector + " li").removeClass(me.currentCls);
-        $(me.selector + " li:nth-child(" + me.currentSlide + ")").addClass(me.currentCls);
-        // title
-        $(me.titleSelector).removeClass(me.titleActive);
-        $(me.titleSelector + ":nth-child(" + me.currentSlide + ")").addClass(me.titleActive);
-    }
-};
 
 // jQuery Input Hints plugin by Rob Volk
 (function (n) { n.fn.inputHints = function () { function r(t) { jQuery(t).val() == "" && jQuery(t).val(n(t).attr("placeholder")).addClass("hint") } function i(t) { n(t).val() == n(t).attr("placeholder") && n(t).val("").removeClass("hint") } var t = n(this); return t.each(function () { r(this) }), t.closest("form").submit(function () { return t.each(function () { i(this) }), !0 })
