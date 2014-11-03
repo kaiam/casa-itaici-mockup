@@ -2124,13 +2124,6 @@ input.hint {
 	.about-img {
 		visibility: hidden;
 	}
-	.intro-slide {
-		height: 350px !important;
-	}
-	.intro-slide img {
-		width: 623px !important;
-		height: 350px !important;
-	}
 	.logo {
 		width: 90px;
 	}
@@ -2151,13 +2144,6 @@ input.hint {
 	}
 	.about-img {
 		visibility: hidden;
-	}
-	.intro-slide {
-		height: 350px !important;
-	}
-	.intro-slide img {
-		width: 623px !important;
-		height: 350px !important;
 	}
 	.logo {
 		width: 90px;
