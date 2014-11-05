@@ -53,7 +53,7 @@ embed, object, iframe{max-width: 100%;}
 	max-width: 400px;
 	height: auto;
 	padding: 35px 18px 25px 18px;
-	background-color: rgba(29,82,29,0.9);
+	background-color: rgba(18,52,18,0.9);
 	left: 2%; /*65px;*/
 	top: 42%;
 	margin-top: -165px;
@@ -65,7 +65,7 @@ embed, object, iframe{max-width: 100%;}
 	color: #fff;
 	font-size: 4.2em;
 	text-transform: uppercase;
-	text-align: left;
+	text-align: center;
 	line-height: 1.2;
 	margin-bottom: 20px;
 }
