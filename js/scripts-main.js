@@ -25,7 +25,8 @@ if (Modernizr.touch) {
 			if($(window).width() > 976) {
 				wrapper.css('margin-top', $(window).height()-90);
 			} else {
-				wrapper.css('margin-top', $('#home').height());
+				var imgH = document.querySelector('.cycle-sentinel').height;
+				wrapper.css('margin-top', imgH);
 			}
 			
 			/*Stiky Header*/
@@ -38,7 +39,8 @@ if (Modernizr.touch) {
 			if($(window).width() > 976) {
 				wrapper.css('margin-top', $(window).height()-90);
 			} else {
-				wrapper.css('margin-top', $('#home').height());
+				var imgH = document.querySelector('.cycle-sentinel').height;
+				wrapper.css('margin-top', imgH);
 			}
 		});
 
@@ -60,12 +62,14 @@ if (Modernizr.touch) {
 		/*Scripts Executed on Page Load*/
 		var wrapper = $('#wrapper');
 		$(window).on('load', function(){
-			
+			console.log("load" + $(window).height());
 			/*Curtain Effect*/
 			if($(window).width() > 976) {
+				console.log(">" + $(window).height());
 				wrapper.css('margin-top', $(window).height()-90);
 			} else {
-				wrapper.css('margin-top', $(window).height());
+				var imgH = document.querySelector('.cycle-sentinel').height;
+				wrapper.css('margin-top', imgH);
 			}
 			
 			/*Stiky Header*/
@@ -84,7 +88,8 @@ if (Modernizr.touch) {
 			if($(window).width() > 976) {
 				wrapper.css('margin-top', $(window).height()-90);
 			} else {
-				wrapper.css('margin-top', $(window).height());
+				var imgH = document.querySelector('.cycle-sentinel').height;
+				wrapper.css('margin-top', imgH);
 			}
 		});
 
