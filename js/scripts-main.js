@@ -6,7 +6,7 @@
 $(window).load(function() {
 	$('#status').fadeOut();
 	$('#preloader').delay(300).fadeOut('slow');
-	$('body').delay(300).css({'overflow':'visible'});
+	$('body').delay(300).css({'overflow-x':'hidden'});
 	setTimeout(function(){$('.intro-title').addClass('slideInLeft');},100);
 });
 
@@ -46,7 +46,7 @@ if (Modernizr.touch) {
 	
 /////////////////////*No-touch Devices*////////////////////////////////////
 	
-		/*Title onScroll Animation*/
+		/*Title onScroll Animation
 		$(window).scroll(function () {
 				var title = $('.intro-title');
 				if ($(this).scrollTop() > 0) {
@@ -104,10 +104,10 @@ $(document).ready(function(e) {
 			$('.dropdown').removeClass('open');	 
 	 });
 	
-	/*Intro Fullscreen Slideshow Initializing*/
+	/*Intro Fullscreen Slideshow Initializing
 	if ($(".intro-slideshow ul li").length > 0) {
         slider.bgSlider($(".intro-slideshow ul li").length);
-    }
+    }*/
 	
 	////////////////////////////////////////////////////////////
 	//INTERNAL ANCHOR LINKS SCROLLING (PAGINATION)
