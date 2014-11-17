@@ -7,7 +7,7 @@
 body {
 	font-family: 'Marmelad', Arial, Helvetica, sans-serif;
 	background-color: #000;
-	overflow: hidden;
+	overflow-x: hidden;
 	padding: 0;
 }
 h1, h2, h3 {
@@ -103,7 +103,6 @@ embed, object, iframe{max-width: 100%;}
 	z-index: -100;
 	top: 0;
 	left: 0;
-	overflow: hidden;
 }
 .intro-slide .cycle-slide {
 	max-width: 100%; !important;
@@ -1848,6 +1847,10 @@ input.hint {
 
 /*Tablet Landscape*/
 @media screen and (max-width: 991px) {
+
+	body {
+		overflow: visible;
+	}
 
 	.intro-title {
 		width: auto;
